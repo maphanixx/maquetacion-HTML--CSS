@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+    .cont-temporizador .reunion strong {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana, sans-serif;
+}
+    </style>
+<title>maquetacion</title>
+</head>
+
+<body onload="mueveReloj()">
+
+    <!-- barra lateral -->
+
+    <div id="sidebar">
+        <div class="toggle-btn">
+          <span><img src="https://img.icons8.com/material-rounded/24/000000/circled-menu.png"/></span>
+        </div>
+        <ul>
+          <p class="space_bar_3"></p>
+
+          <div class="logo"><img src="./imagenes/icons8-adobe-dreamweaver-96.png" height="100px" width="100px"></div>
+
+            <div id="fecha">
+                <script>
+                    date = new Date().toLocaleDateString();
+                    document.write(date);
+                </script>
+                <div class="file-3 file-img-3"><img src="./imagenes/icons8-calendar-week-96.png" height="90px" width="80px"></div>
+            </div>
+
+            <p class="space_bar_1"></p>
+
+           <div>
+                <div id="reloj"></div>
+                <div class="file-4 file-img-4"><img src="./imagenes/icons8-clock-96.png" height="90px" width="80px" ></div>
+           </div> 
+            
+
+            <p class="space_bar_1"></p>
+
+            <div class="enlaces"> 
+                <p class="p-enlaces">enlaces</p>
+                <div class="file-2 file-img-2"><img src="./imagenes/icons8-link-32.png"></div></div>
+
+            <p class="space_bar_1"></p>
+
+            <div class="archivos">
+                <p class="p-archive">archivos</p>
+            <div class="file file-img"><img class="archive" src="https://img.icons8.com/small/32/FFFFFF/archive-folder.png"/></div></div>
+
+            <p class="space_bar_2"></p>
+
+            <div class="cerrar_sesion"> 
+                <p>Cerrar Sesion</p> 
+                <div class="file-5 file-img-5"><img src="./imagenes/icons8-logout-96.png" height="50px" width="50px"></div>
+
+            </div>
+
+
+        </ul>
+
+    </div>
+
+    <!-- Contenido -->
+
+    <p class="space_bar"></p>
+	
+  <span class="content"><img src="imagenes/woman-g829c4231e_1920.jpg" width="825px" height="400px" alt="" /></span>
+
+ <section class="contenedor-2" id="info">
+    <div class="card__perfil">
+        <div class="card__nombre">
+            <img id="img" src="https://www.markuptag.com/images/user-img-1.jpg" alt="">
+            <h2>Brayan Serna</h2>
+            <p>Diseñador web</p>
+        </div>
+        <hr>
+        <div class="card__descripcion">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores perferendis rem ipsam
+                veniam reiciendis eveniet optio eum velit, dignissimos asperiores fugit molestias ipsum temporibus
+                rerum hic iste nulla vitae?</p>
+        </div>
+        <hr>
+        <div class="card__button">
+            <a class="enlace" href="#">Saber más</a>
+        </div>
+    </div>
+ </section>
+
+    <div class="contenedor info">
+        <h1 class="text"><strong>tiempo para la proxima reunion</strong></h1>
+	
+        <div class="cont-temporizador">
+
+			
+
+    	 <div class="bloque">
+           <div class="dias" id="dias">00</div>
+               <p>DÍAS</p>
+     </div>
+          <div class="bloque">
+               <div class="horas" id="horas">--</div>
+               <p>HORAS</p>
+      </div>
+           <div class="bloque">
+               <div class="minutos" id="minutos">--</div>
+               <p>MINUTOS</p>
+           </div>
+           <div class="bloque">
+               <div class="segundos" id="segundos">--</div>
+               <p>SEGUNDOS</p>
+           </div>
+    </div>
+
+    <button type="submit" class="reunion">entrar en la reunion</button>
+    </div>
+
+    <div class="list">
+        <div class="presentation">
+    
+            <div class="presentation-card"><img id="border" src="./imagenes/Screenshot 2022-11-03 193719.png" width="250px" height="200px" ></div>
+
+        </div>
+
+        <div class="meeting-lists">
+            <h1>listas de reuniones</h1>
+            <br>
+            <div>
+                <h5>reunion ejecutivos</h5>
+                <img src="./imagenes/icons8-user-groups-32.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <p class="space_bar_4"></p>
+            <div>
+                <h5>reunion de proveedores</h5>
+                <img src="./imagenes/icons8-user-groups-32.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <p class="space_bar_4"></p>
+            <div>
+                <h5>reunion con los asesores</h5>
+                <img src="./imagenes/icons8-user-groups-32.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <p class="space_bar_4"></p>
+            <div>
+                <h5>reunion con el cliente</h5>
+                <img src="./imagenes/icons8-user-groups-32.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+        </div>
+
+    </div>
+	
+	
+</body>
+<script src="./script.js"></script>
+<script src="./temporizador.js"></script>
+</html>
